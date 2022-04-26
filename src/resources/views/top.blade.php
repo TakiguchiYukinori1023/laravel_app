@@ -6,10 +6,13 @@
   <title>Document</title>
 </head>
 <body>
-  <form action="{{ route('search') }}" method="post">
-    @csrf
-    <input type="search" name="search" placeholder="キーワードを入力">
-    <input type="submit" name="submit" value="検索">
-  </form>
+  <div class="flex-center position-ref full-height">
+    <a href="{{ route('login') }}">Login</a>
+    <a href="{{ route('register') }}">Register</a>
+  </div>
+  {{ Form::open(['route' => ['search'], 'method' => 'get']) }}
+    {{ Form::text('text', null, ['placeholder' => 'キーワードを入力してください', 'size' => 30]) }}
+    {{ Form::submit('検索', ['class'=>'submit'] )}}
+  {{ Form::close() }}
 </body>
 </html>
