@@ -23,3 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ecsite', 'EcSiteController@topPage')->name('toppage');
 Route::get('/ecsite/search', 'EcSiteController@search')->name('search');
 Route::get('/ecsite/mypage', 'EcSiteController@myPage')->name('mypage');
+Route::get('/ecsite/inquiryform', 'EcSiteController@inquiryForm')->name('inquiryform');
+Route::post('/ecsite/inquiryconfirm', 'EcSiteController@inquiryConfirm')->name('inquiryconfirm');
+Route::post('/ecsite/inquiryfinish', 'EcSiteController@inquiryFinish')->name('inquiryfinish');
+Route::get('/ecsite/cart', 'EcSiteController@getCartInfo')->name('cartinfo');
