@@ -20,5 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 //以下は自分で作成したルート
-Route::get('/', 'EcSiteController@topPage')->name('topPage');
-Route::get('/search', 'EcSiteController@search')->name('search');
+Route::get('/ecsite', 'EcSiteController@topPage')->name('toppage');
+Route::get('/ecsite/search', 'EcSiteController@search')->name('search');
+Route::get('/ecsite/mypage', 'EcSiteController@myPage')->name('mypage');
