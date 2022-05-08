@@ -10,6 +10,8 @@
 
   {{ Form::open(['route' => ['search'], 'method' => 'get']) }}
     {{ Form::text('text', null, ['placeholder' => 'キーワードを入力してください', 'size' => 30]) }}
-    {{ Form::submit('検索', ['class'=>'submit'] )}}
+    {{ Form::submit('検索', ['class'=>'submit']) }}
   {{ Form::close() }}
+
+  <a href="{{ route('inquiryform') }}">お問い合わせフォーム</a>
 @endsection
