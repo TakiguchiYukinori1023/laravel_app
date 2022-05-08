@@ -26,7 +26,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = '/ecsite/mypage';
 
     /**
      * Create a new controller instance.
@@ -38,9 +38,4 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function redirectPath()
-    {
-        // return '任意のurl';
-        return '/toppage';
-    }
 }
