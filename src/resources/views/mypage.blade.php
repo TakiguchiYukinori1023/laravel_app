@@ -3,5 +3,6 @@
 @section('title', 'マイページ')
 
 @section('content')
-  {{ 'あああああ' }}
+  <p>ようこそ{{ $loginUser->name }}さん</p>
+  <a href="{{ route('cartinfo') }}">カート</a>
 @endsection
