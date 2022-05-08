@@ -15,4 +15,10 @@ class EcSiteController extends Controller
     {
         echo '赤さん';die();
     }
+
+    public function myPage()
+    {
+        $user = Auth::id();
+        return view('/mypage');
+    }
 }
