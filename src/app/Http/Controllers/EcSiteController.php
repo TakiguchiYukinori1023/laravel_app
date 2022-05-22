@@ -25,21 +25,6 @@ class EcSiteController extends Controller
         return view('/mypage', ['loginUser' => $loginUser]);
     }
 
-    public function inquiryForm()
-    {
-        return view('inquiryform');
-    }
-
-    public function inquiryConfirm(Request $request)
-    {
-        return view('inquiryconfirm', ['input' => $request]);
-    }
-
-    public function inquiryFinish()
-    {
-        return view('inquiryfinish');
-    }
-
     public function getCartInfo()
     {
         $loginUserId = Auth::id();
