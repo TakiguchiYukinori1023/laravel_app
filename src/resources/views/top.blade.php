@@ -13,5 +13,5 @@
     {{ Form::submit('検索', ['class'=>'submit']) }}
   {{ Form::close() }}
 
-  <a href="{{ route('inquiryform') }}">お問い合わせフォーム</a>
+  <a href="{{ route('index') }}">お問い合わせフォーム</a>
 @endsection
